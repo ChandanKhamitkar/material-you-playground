@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import '~material-you-react/dist/esm/index.css';
+
+
 :root{
   /* Fully rounded */
   --md-sys-shape-corner-full-family: 3px;
@@ -90,56 +93,6 @@
   --md-sys-elevation-level0-value: 0px;
   --md-sys-elevation-level0-unit: 1px;
   --md-sys-elevation-level0: 0px;
-
-  --md-sys-color-primary: 100, 85, 143;
-  --md-sys-color-surface-tint: 100, 85, 143;
-  --md-sys-color-on-primary: 255, 255, 255;
-  --md-sys-color-primary-container: 232, 221, 255;
-  --md-sys-color-on-primary-container: 32, 16, 71;
-  --md-sys-color-secondary: 98, 91, 113;
-  --md-sys-color-on-secondary: 255, 255, 255;
-  --md-sys-color-secondary-container: 232, 222, 248;
-  --md-sys-color-on-secondary-container: 30, 25, 43;
-  --md-sys-color-tertiary: 125, 82, 96;
-  --md-sys-color-on-tertiary: 255, 255, 255;
-  --md-sys-color-tertiary-container: 255, 217, 227;
-  --md-sys-color-on-tertiary-container: 49, 16, 29;
-  --md-sys-color-error: 186, 26, 26;
-  --md-sys-color-on-error: 255, 255, 255;
-  --md-sys-color-error-container: 255, 218, 214;
-  --md-sys-color-on-error-container: 65, 0, 2;
-  --md-sys-color-background: 253, 247, 255;
-  --md-sys-color-on-background: 29, 27, 32;
-  --md-sys-color-surface: 253, 247, 255;
-  --md-sys-color-on-surface: 29, 27, 32;
-  --md-sys-color-surface-variant: 231, 224, 236;
-  --md-sys-color-on-surface-variant: 73, 69, 78;
-  --md-sys-color-outline: 122, 117, 127;
-  --md-sys-color-outline-variant: 202, 196, 207;
-  --md-sys-color-shadow: 0, 0, 0;
-  --md-sys-color-scrim: 0, 0, 0;
-  --md-sys-color-inverse-surface: 50, 47, 53;
-  --md-sys-color-inverse-on-surface: 245, 239, 247;
-  --md-sys-color-inverse-primary: 207, 189, 254;
-  --md-sys-color-primary-fixed: 232, 221, 255;
-  --md-sys-color-on-primary-fixed: 32, 16, 71;
-  --md-sys-color-primary-fixed-dim: 207, 189, 254;
-  --md-sys-color-on-primary-fixed-variant: 76, 62, 117;
-  --md-sys-color-secondary-fixed: 232, 222, 248;
-  --md-sys-color-on-secondary-fixed: 30, 25, 43;
-  --md-sys-color-secondary-fixed-dim: 203, 194, 220;
-  --md-sys-color-on-secondary-fixed-variant: 74, 68, 88;
-  --md-sys-color-tertiary-fixed: 255, 217, 227;
-  --md-sys-color-on-tertiary-fixed: 49, 16, 29;
-  --md-sys-color-tertiary-fixed-dim: 239, 184, 200;
-  --md-sys-color-on-tertiary-fixed-variant: 99, 59, 73;
-  --md-sys-color-surface-dim: 222, 216, 224;
-  --md-sys-color-surface-bright: 253, 247, 255;
-  --md-sys-color-surface-container-lowest: 255, 255, 255;
-  --md-sys-color-surface-container-low: 248, 242, 250;
-  --md-sys-color-surface-container: 242, 236, 244;
-  --md-sys-color-surface-container-high: 236, 230, 238;
-  --md-sys-color-surface-container-highest: 230, 225, 233;
 
   /*Typography*/
    /* Label Small */
@@ -483,60 +436,6 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
-    :root {
-        --md-sys-color-primary: rgb(207 189 254);
-        --md-sys-color-surface-tint: rgb(207 189 254);
-        --md-sys-color-on-primary: rgb(53 39 93);
-        --md-sys-color-primary-container: rgb(76 62 117);
-        --md-sys-color-on-primary-container: rgb(232 221 255);
-        --md-sys-color-secondary: rgb(203 194 220);
-        --md-sys-color-on-secondary: rgb(51 45 65);
-        --md-sys-color-secondary-container: rgb(74 68 88);
-        --md-sys-color-on-secondary-container: rgb(232 222 248);
-        --md-sys-color-tertiary: rgb(239 184 200);
-        --md-sys-color-on-tertiary: rgb(74 37 50);
-        --md-sys-color-tertiary-container: rgb(99 59 73);
-        --md-sys-color-on-tertiary-container: rgb(255 217 227);
-        --md-sys-color-error: rgb(255 180 171);
-        --md-sys-color-on-error: rgb(105 0 5);
-        --md-sys-color-error-container: rgb(147 0 10);
-        --md-sys-color-on-error-container: rgb(255 218 214);
-        --md-sys-color-background: rgb(20 18 24);
-        --md-sys-color-on-background: rgb(230 225 233);
-        --md-sys-color-surface: rgb(20 18 24);
-        --md-sys-color-on-surface: rgb(230 225 233);
-        --md-sys-color-surface-variant: rgb(73 69 78);
-        --md-sys-color-on-surface-variant: rgb(202 196 207);
-        --md-sys-color-outline: rgb(148 143 153);
-        --md-sys-color-outline-variant: rgb(73 69 78);
-        --md-sys-color-shadow: rgb(0 0 0);
-        --md-sys-color-scrim: rgb(0 0 0);
-        --md-sys-color-inverse-surface: rgb(230 225 233);
-        --md-sys-color-inverse-on-surface: rgb(50 47 53);
-        --md-sys-color-inverse-primary: rgb(100 85 143);
-        --md-sys-color-primary-fixed: rgb(232 221 255);
-        --md-sys-color-on-primary-fixed: rgb(32 16 71);
-        --md-sys-color-primary-fixed-dim: rgb(207 189 254);
-        --md-sys-color-on-primary-fixed-variant: rgb(76 62 117);
-        --md-sys-color-secondary-fixed: rgb(232 222 248);
-        --md-sys-color-on-secondary-fixed: rgb(30 25 43);
-        --md-sys-color-secondary-fixed-dim: rgb(203 194 220);
-        --md-sys-color-on-secondary-fixed-variant: rgb(74 68 88);
-        --md-sys-color-tertiary-fixed: rgb(255 217 227);
-        --md-sys-color-on-tertiary-fixed: rgb(49 16 29);
-        --md-sys-color-tertiary-fixed-dim: rgb(239 184 200);
-        --md-sys-color-on-tertiary-fixed-variant: rgb(99 59 73);
-        --md-sys-color-surface-dim: rgb(20 18 24);
-        --md-sys-color-surface-bright: rgb(59 56 62);
-        --md-sys-color-surface-container-lowest: rgb(15 13 19);
-        --md-sys-color-surface-container-low: rgb(29 27 32);
-        --md-sys-color-surface-container: rgb(33 31 36);
-        --md-sys-color-surface-container-high: rgb(43 41 47);
-        --md-sys-color-surface-container-highest: rgb(54 52 58);
-    }
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
@@ -556,9 +455,30 @@ body {
   'opsz' 24
 }
 
+.md-elevation-0{
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.30), 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+}
+
 .md-elevation-1{
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 1px 3px 1px rgba(0, 0, 0, 0.15)
 }
+
+.md-elevation-2{
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.30), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+}
+
+.md-elevation-3{
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.30), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+}
+
+.md-elevation-4{
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.30), 0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+}
+
+.md-elevation-5{
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.30), 0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+}
+
 
 /* Label Small */
 .label-small {
